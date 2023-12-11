@@ -10,4 +10,4 @@ ADD /target/TaskService.jar ./TaskService.jar
 
 EXPOSE 8081
 
-CMD java -jar UserService.jar
+CMD java -jar TaskService.jar
