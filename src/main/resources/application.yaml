@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: task-service
+  datasource:
+    password: ${DB_PASSWORD}
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/task_service
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+jwt:
+  secret-code: ${SECRET_KEY}
+
+springdoc:
+  swagger-ui:
+    path: /docs/
